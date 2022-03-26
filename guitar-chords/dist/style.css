@@ -1,0 +1,177 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Slab|Montserrat';
+* {
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+body {
+  background: #ffffff00;
+  font-family: "Montserrat", serif;
+}
+
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.guitar {
+  width: 300px;
+  height: 605px;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  padding: 0 5px;
+  position: relative;
+  background: repeating-linear-gradient(to bottom, #ffffff 0px, #ffffff 120px, black 120px, black 121px);
+}
+
+.neck {
+  position: absolute;
+  width: 300px;
+  height: 605px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.string {
+  height: 605px;
+  background: #000000;
+}
+.string:nth-of-type(1) {
+  width: 7px;
+}
+.string:nth-of-type(2) {
+  width: 6px;
+}
+.string:nth-of-type(3) {
+  width: 5px;
+}
+.string:nth-of-type(4) {
+  width: 4px;
+}
+.string:nth-of-type(5) {
+  width: 3px;
+}
+.string:nth-of-type(6) {
+  width: 2px;
+}
+
+.finger {
+  background: #2fad66;
+  border: 3px solid #2fad66;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  top: -100px;
+  transition: all 0.5s;
+}
+.finger:nth-of-type(1) {
+  left: -20px;
+}
+.finger:nth-of-type(2) {
+  left: 40px;
+}
+.finger:nth-of-type(3) {
+  left: 100px;
+}
+.finger:nth-of-type(4) {
+  left: 160px;
+}
+.finger:nth-of-type(5) {
+  left: 220px;
+}
+.finger:nth-of-type(6) {
+  left: 280px;
+}
+
+.finger-position-0 {
+  top: -40px;
+  opacity: 1;
+  transition: all 0.5s;
+  background: #ffffff;
+}
+
+.finger-position-1 {
+  top: 40px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.finger-position-2 {
+  top: 160px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.finger-position-3 {
+  top: 280px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.finger-position-4 {
+  top: 400px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.finger-position-5 {
+  top: 520px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.finger-position-6 {
+  top: 640px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.finger-position-7 {
+  top: 760px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.picker {
+  height: 500px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.picker input[type=radio] {
+  display: none;
+}
+.picker input[type=radio]:checked ~ .selection {
+  transition: all 0.5s;
+  color: #ffffff;
+  background: #2fad66;
+  border-radius: 10px;
+}
+.picker .base,
+.picker .key {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 100px;
+  cursor: pointer;
+}
+.picker label {
+  padding: 5px 0;
+  font-size: 24px;
+  line-height: 24px;
+  border-bottom: 1px solid black;
+}
+.picker label:last-child {
+  border-bottom: 0;
+}
+.picker .selection {
+  transition: all 0.5s;
+  padding: 8px 10px 4px;
+}
