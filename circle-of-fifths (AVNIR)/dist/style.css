@@ -1,0 +1,171 @@
+html {box-sizing: border-box;}
+
+/* If the OS has dark mode set then... */
+/* Change light <--> dark for testing */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pageBg: #545454;
+    --imgOpacity: 1;
+    --bgFill: #545454;
+
+    --rotationBgFill: #fff;
+    --rotationBgOpacity: 0.25;
+    --rotationBgStroke: #000;
+    --rotationMajorStroke: #000;
+    --rotationMajorStrokeWidth: 1;
+
+    --circlesMajorStroke: currentcolor;
+    --circlesMajorStrokeWidth: 1;
+
+    --shieldFill: #fff;
+    --shieldStroke: currentcolor;
+    --shieldOverlayFill: #2fad66;
+    --shieldOverlayFillOpacity: 0.65;
+    --shieldSus4Fill: #000;
+    --shieldSus4FillOpacity: 0.2;
+    --shieldKeyFill: #d7d8fb;
+
+    --shieldTextLinesColor: #fff;
+    --shieldTextLinesFill: #fff;
+    --shieldTextLinesShadow: 0 2px 1px #000;
+
+    --shieldTextFill: #000;
+  }
+}
+
+*,
+*::before,
+*::after {box-sizing: inherit;}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #000;
+  background-color: var(--pageBg);
+}
+.-visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+}
+
+
+
+.circle {
+  margin: 0 auto;
+}
+
+
+.svg_circle-of-fifths {
+  width: 100%;
+  max-width: calc(100vmin - 2.8rem);
+  overflow: visible;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.imgLayer,
+.rotationLayer,
+.circlesLayer,
+.shieldLayer,
+.textLayer,
+.shieldTextLines {
+  pointer-events: none;
+}
+
+
+.bgLayer {
+  fill: var(--bgFill);
+}
+
+.imgLayer {
+  opacity: var(--imgOpacity);
+}
+
+.clickLayer_major {
+  stroke: currentcolor;
+  stroke-width: 1;
+}
+
+.rotationLayer {
+  /* Variables updated by the JS */
+  --rotation: 0deg;
+  --transitionDuration: .3s;
+  will-change: transform;
+  transform-origin: 50% 50%;
+  transform: rotate(var(--rotation)) translateZ(0px);
+  transition: var(--transitionDuration) transform linear;
+}
+.rotationLayer_bg {
+  fill-rule: evenodd;
+  fill: var(--rotationBgFill);
+  fill-opacity var(--rotationBgOpacity);
+  stroke: var(--rotationBgStroke);
+  stroke-width: 2;
+}
+.rotationLayer_minor {
+  opacity: .85;
+}
+.rotationLayer_major {
+  opacity: .85;
+  stroke: var(--rotationMajorStroke);
+  stroke-width: var(--rotationMajorStrokeWidth);
+}
+
+.circlesLayer {
+  fill: none;
+  stroke: var(--circlesMajorStroke);
+  stroke-width: var(--circlesMajorStrokeWidth);
+}
+
+.shieldLayer {
+  fill: var(--shieldFill);
+  stroke: var(--shieldStroke);
+  stroke-width: 2;
+}
+.sheildLayer_overlay {
+  fill: var(--shieldOverlayFill);
+  fill-opacity: var(--shieldOverlayFillOpacity);
+}
+.sheildLayer_sus4 {
+  fill: var(--shieldSus4Fill);
+  fill-opacity: var(--shieldSus4FillOpacity);
+}
+.shieldLayer_key {
+  fill: var(--shieldKeyFill);
+}
+
+.shieldTextLines {
+  fill: var(--shieldTextLinesFill);
+/*   stroke: var(--shieldTextLinesStroke); */
+  color: var(--shieldTextLinesColor);
+}
+
+.shieldTextLines_click,
+.shieldTextLines_tap {
+  text-shadow: var(--shieldTextLinesShadow);
+}
+.shieldTextLines_key {
+   fill: #000;
+}
+
+.shieldText {
+  fill: var(--shieldTextFill);
+}
+
+
+[data-rotate]:hover {
+  cursor: pointer;
+  fill: #fff;
+}
+[data-drag] {
+  cursor: move;
+}
+
+/* Dragging requires pointer events */
+.noPointerEvents .requiresPointerEvents {
+  display: none;
+}
