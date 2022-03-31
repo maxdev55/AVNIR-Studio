@@ -1,0 +1,133 @@
+html,
+body {
+  height: 100%;
+  font-family: PTSans-Regular, PT Sans;
+}
+.container {
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#rotating-text,
+#wheel {
+  transform: rotate(0deg);
+  transform-origin: 50%;
+  transition: transform 0.5s;
+}
+
+text, cls-17 {
+  color: #000;
+  fill: #000;
+}
+
+#gray-overlay,
+#minor-circle,
+#rotating-text,
+#fixed-notes {
+  pointer-events: none;
+}
+
+#wheel * {
+  cursor: pointer;
+  &:hover {
+    fill: red;
+  }
+}
+.cls-7 {
+  fill: #f7941d;
+}
+
+.cls-7, .cls-8 {
+  mix-blend-mode: overlay;
+}
+
+.cls-8 {
+  fill: #f15a29;
+}
+
+.darker-note {
+  fill: #bbb;
+}
+.lighter-note {
+  fill: #aaa;
+}
+
+#note-D {
+
+}
+
+#note-G {
+
+}
+
+#note-C {
+
+}
+
+#note-F {
+
+}
+
+#note-A {
+}
+
+#center {
+  cursor: pointer;
+  fill: #fff;
+}
+
+#note-E {
+
+}
+
+#note-B {
+
+}
+
+#note-Fs {
+
+}
+
+#note-Db {
+
+}
+
+#note-Ab {
+
+}
+
+#note-Eb {
+
+}
+
+#note-Bb {
+
+}
+
+#minor-circle {
+  mix-blend-mode: screen;
+  opacity: 0.65;
+  & * {
+    fill: gray;
+  }
+}
+
+.cls-18 {
+  font-size: 23.9px;
+}
+
+.cls-19 {
+  font-size: 42.65px;
+}
+
+.cls-20 {
+  font-size: 38.25px;
+}
+
+.cls-21 {
+  font-size: 83.94px;
+}
