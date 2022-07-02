@@ -1,4 +1,3 @@
-
 <div class=circle_inner data-drag draggable=true>
 
 <svg class="svg_circle-of-fifths" viewBox="0 0 960 960" draggable=false>
@@ -125,5 +124,3 @@
 
   </div>
 </div>
- 
-
