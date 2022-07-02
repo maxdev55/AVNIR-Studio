@@ -2,7 +2,7 @@
 
 <svg class="svg_circle-of-fifths" viewBox="0 0 960 960" draggable=false>
 
- 
+
 
   <circle class="bgLayer" cx="480" cy="480" r="180" stroke-width="4"/>
 
@@ -54,10 +54,10 @@
       <path fill="#ddfff7" d="M743 513l88 11c-3 31-11 61-23 89l-82-32 17-68z"/>
       <path fill="#ccf2ff" d="M692 640l71 53c-19 25-41 47-65 67l-55-70 49-50z"/>
       <path fill="#ccd9ff" d="M584 724l35 82c-28 12-58 21-89 25l-13-88 67-19z"/>
-      
+
       <!-- Ebm -->
       <path fill="#d9ccff" d="M381 726c21 9 68 18 68 18l-11 88c-31-4-61-12-90-23l33-83z"/>
-      
+
       <path fill="#efccfa" d="M271 644c15 19 50 49 50 49l-53 71c-25-19-47-41-66-65l69-55z"/>
       <path fill="#f6cdec" d="M217 518l19 67-82 35c-12-29-20-59-24-89l87-13z"/>
       <path fill="#ffc6d4" d="M234 381l-18 67-88-10c4-31 12-62 23-90l83 33z"/>
@@ -104,7 +104,7 @@
 
 
   <g class="shieldTextLines">
-   
+
     <text class="shieldTextLines_click" x="345" y="484" font-size="20">Click any chord to change key.</text>
     <text class="shieldTextLines_tap requiresPointerEvents" x="340" y="510" font-size="20">Tap &amp; drag left &harr; right to rotate.</text>
     <text class="shieldTextLines_key" x="460" y="322" font-size="24">Key</text>
