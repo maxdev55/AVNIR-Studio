@@ -5,7 +5,7 @@
   <circle class="bgLayer" cx="480" cy="480" r="180" stroke-width="4"/>
 
 
-  <g class=clickLayer>
+  <g class="clickLayer">
 
     <g class="clickLayer_minor">
       <path data-rotate="0" data-duration="0.3" d="M512 216l11-88c31 4 61 12 90 23l-33 83-68-18z"/>
@@ -41,7 +41,7 @@
 
 
 
-  <g class=rotationLayer>
+  <g class="rotationLayer">
 
     <path class="rotationLayer_bg" d="M480 33a447 447 0 1 1 0 894 447 447 0 0 1 0-894zm0 93a354 354 0 1 1 0 708 354 354 0 0 1 0-708z"/>
 
