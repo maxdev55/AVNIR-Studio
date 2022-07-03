@@ -1,0 +1,266 @@
+/* Copyright (c) 2007 Rand Scullard. All Rights Reserved. */
+
+HTML
+{
+	border:0;
+}
+
+BODY
+{
+	margin:0;
+	background-color:white;
+	height:100%;
+}
+
+@media screen
+{
+	BODY
+	{
+		overflow:auto;
+	}
+}
+
+.Description
+{
+	display:none;
+}
+
+.LoadingMessage
+{
+	width:100%;
+	height:100%;
+}
+
+.LoadingMessage TD
+{
+	text-align:center;
+	vertical-align:middle;
+	font-family:"Arial Black", Arial, Helvetica;
+	font-size:21px;
+}
+
+.PageContent
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+}
+
+.TitleArea
+{
+	position:absolute;
+	top:10px;
+	left:20px;
+}
+
+.DocumentationLink
+{
+	position:absolute;
+	top:280px;
+	left:190px;
+	width:150px;
+	text-align:center;
+	background-color:#d2e6f6;
+	padding:5px 0px;
+}
+
+.DocumentationLink A
+{
+	font-family:Arial, Helvetica;
+	font-weight:bold;
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+}
+
+.DocumentationLink A:hover
+{
+	text-decoration:underline;
+}
+
+.Copyright
+{
+	height:100%;
+}
+
+.Copyright TD
+{
+	font-family:Arial, Helvetica;
+	font-size:9px;
+	color:#909090;
+}
+
+.Copyright IMG
+{
+	width:1px;
+	height:540px;
+}
+
+.Circle
+{
+	position:absolute;
+	top:30px;
+	left:390px;
+}
+
+.CirclePart
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:550px;
+	height:550px;
+}
+
+.TonicTable,
+.ModeTable
+{
+	position:absolute;
+	border:2px solid black;
+	border-collapse:collapse;
+	-moz-user-select:none; 
+}
+
+.TonicTable
+{
+	top:100px;
+	left:50px;
+	width:100px;
+}
+
+.ModeTable
+{
+	top:100px;
+	left:190px;
+	width:150px;
+}
+
+.TonicTable TD,
+.ModeTable TD
+{
+	border:1px solid black;
+	text-align:center;
+	white-space:nowrap;
+	font-family:Arial, Helvetica;
+	font-weight:bold;
+	font-size:15px;
+	color:black;
+	background-color:White;
+	padding:0px 10px;
+}
+
+.TonicTable THEAD TD,
+.ModeTable THEAD TD
+{
+	color:white;
+	background-color:black;
+}
+
+.TonicTable TBODY TD,
+.ModeTable TBODY TD
+{
+	cursor:pointer;
+}
+
+.TonicTable TBODY TD.obscure,
+.ModeTable TBODY TD.obscure
+{
+	background-color:#e8e8e8;
+}
+
+.TonicTable TBODY TD.selected,
+.ModeTable TBODY TD.selected
+{
+	background-color:#ffe1a7;
+}
+
+.NoteName
+{
+	position:absolute;
+	width:100px;
+	text-align:center;
+	font-family:"Arial Black", Arial, Helvetica;
+	font-size:43px;
+	color:black;
+}
+
+.Note1  { top: 70px; left:325px; }
+.Note2  { top:140px; left:400px; }
+.Note3  { top:243px; left:425px; }
+.Note4  { top:346px; left:400px; }
+.Note5  { top:417px; left:325px; }
+.Note6  { top:445px; left:225px; }
+.Note7  { top:417px; left:125px; }
+.Note8  { top:346px; left: 50px; }
+.Note9  { top:243px; left: 25px; }
+.Note10 { top:140px; left: 50px; }
+.Note11 { top: 70px; left:125px; }
+.Note12 { top: 42px; left:225px; }
+
+.Degree
+{
+	position:absolute;
+	width:100px;
+	text-align:center;
+	font-family:"Arial Black", Arial, Helvetica;
+	font-size:27px;
+	color:black;
+}
+
+.Degree1  { top: 148px; left:290px; }
+.Degree2  { top: 192px; left:334px; }
+.Degree3  { top: 255px; left:350px; }
+.Degree4  { top: 317px; left:334px; }
+.Degree5  { top: 362px; left:290px; }
+.Degree6  { top: 377px; left:225px; }
+.Degree7  { top: 362px; left:160px; }
+.Degree8  { top: 317px; left:116px; }
+.Degree9  { top: 255px; left:103px; }
+.Degree10 { top: 192px; left:116px; }
+.Degree11 { top: 148px; left:160px; }
+.Degree12 { top: 132px; left:225px; }
+
+.Sharp_15px
+{
+	width:5px;
+	height:15px;
+	position:relative;
+	top:2px;
+}
+
+.Sharp_43px
+{
+	width:14px;
+	height:40px;
+	position:relative;
+	top:4px;
+}
+
+.DoubleFlat_43px
+{
+	width:33px;
+	height:32px;
+}
+
+.DoubleSharp_43px
+{
+	width:15px;
+	height:15px;
+	position:relative;
+	top:-6px;
+}
+
+.Flat_15px
+{
+	width:7px;
+	height:12px;
+}
+
+.Flat_43px
+{
+	width:19px;
+	height:32px;
+}
+
