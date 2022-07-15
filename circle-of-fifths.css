@@ -4,6 +4,7 @@ body {
   height: 100%;
   
   font-family: PTSans-Regular, PT Sans;
+  background-color: trasparent;
 }
 
 .container {
@@ -13,6 +14,7 @@ body {
   justify-content: center;
   margin: 0 auto;
   padding: 10px;
+  background-color: trasparent;
 }
 
 #rotating-text,
