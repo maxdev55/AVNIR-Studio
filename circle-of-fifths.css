@@ -3,13 +3,12 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: PTSans-Regular, PT Sans;
   background-color: transparent;
 }
 
 .container {
   max-width: 100%;
-  min-width:300px;
+  min-width:250px;
   width: 100%;
   height: 100%;
   display: flex;
