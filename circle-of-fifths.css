@@ -16,6 +16,7 @@
   transform: rotate(0deg);
   transform-origin: 50%;
   transition: transform 0.5s;
+  background-color: transparent;
 
 }
 
