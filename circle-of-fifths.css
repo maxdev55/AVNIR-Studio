@@ -1,8 +1,8 @@
 
 
 .containerWheel {
-  max-width: 400px;
-  min-width:90%;
+  max-width: 100%;
+  min-width:250px;
   width: 90%;
   height: 90%;
   display: flex;
