@@ -5,6 +5,7 @@
   min-width:250px;
   width: 90%;
   height: 90%;
+  position: relative;
   display: flex;
   justify-content: stretch;
   background-color: transparent;
