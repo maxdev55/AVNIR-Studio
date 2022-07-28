@@ -1,4 +1,4 @@
- <script>
+
 document.addEventListener("DOMContentLoaded", () => {
   let wheel = document.querySelector("#wheel");
   let center = document.querySelector("#center");
@@ -19,4 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
     wheel.style.transform = "rotate(0deg)";
   });
 });
-</script>
+
