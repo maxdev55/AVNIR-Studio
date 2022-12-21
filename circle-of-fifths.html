@@ -123,5 +123,96 @@
 
 
 </body>
+<style>
+.containerWheel {
+  max-width: 100%;
+  min-width:380px;
+  width: 90%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  
+}
 
+#rotating-text,
+#wheel {
+  transform: rotate(0deg);
+  transform-origin: 50%;
+  transition: transform 0.5s;
+
+}
+
+text, cls-17 {
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+}
+
+#gray-overlay,
+#minor-circle,
+#rotating-text,
+#fixed-notes {
+  pointer-events: none;
+}
+
+#wheel * {
+  cursor: pointer;
+}
+#wheel *:hover {
+  fill: #FFD700;
+}
+
+.cls-7 {
+  fill: #1E6E40;
+}
+
+.cls-7, .cls-8 {
+  mix-blend-mode: overlay;
+}
+
+.cls-8 {
+  fill: #FFD700;
+}
+
+.darker-note {
+  fill: #bbb;
+}
+
+.lighter-note {
+  fill: #aaa;
+}
+
+#center {
+  cursor: pointer;
+  fill: #101213;
+  opacity: 0.5;
+  
+}
+
+#minor-circle {
+  mix-blend-mode: screen;
+  opacity: 0.65;
+}
+#minor-circle * {
+  fill: gray;
+}
+
+.cls-18 {
+  font-size: 23.9px;
+}
+
+.cls-19 {
+  font-size: 42.65px;
+}
+
+.cls-20 {
+  font-size: 38.25px;
+}
+
+.cls-21 {
+  font-size: 83.94px;
+}
+
+</style>
 </html>
